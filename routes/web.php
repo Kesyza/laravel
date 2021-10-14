@@ -24,21 +24,21 @@ Route::get('/about', function () {
 });
 
 Route::get('/pembuka', function () {
-    return view('pembuka');
+    return view('/key/pembuka');
 });
 
 Route::get('/perkenalan', function () {
-    return view('perkenalan');
+    return view('/key/perkenalan');
 });
 
 Route::get('/riwayat', function () {
-    return view('riwayat');
+    return view('/key/riwayat');
 });
 
 Route::get('/prestasi', function () {
-    return view('prestasi');
+    return view('/key/prestasi');
 });
 
 Route::get('/penutup', function () {
-    return view('penutup');
+    return view('/key/penutup');
 });
