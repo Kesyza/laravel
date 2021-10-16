@@ -175,3 +175,15 @@ Route::get('latihan',function(){
          ];
     return view ('latihan',compact('pel'));
 });
+
+
+Route::get('/testmodel', function() {
+    $query = App\Models\Post::all(); ;
+    return $query;
+    });
+
+
+Route::get('/cobaan', function() {
+    $query = App\Models\Biodatas::all(); ;
+    return $query;
+});
