@@ -187,3 +187,15 @@ Route::get('/cobaan', function() {
     $query = App\Models\Biodatas::all(); ;
     return $query;
 });
+
+
+Route::get('/test-post', function () {
+    $query = App\Models\Post::all();
+    return view('test-post', compact('query'));
+});
+
+
+Route::get('/test-biodatas', function () {
+    $query = App\Models\Biodatas::all();
+    return view('test-biodatas', compact('query'));
+});
