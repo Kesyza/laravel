@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\BarangController;
+use App\Http\Controllers\PembeliController;
+use App\Http\Controllers\SuplierController;
+use App\Http\Controllers\PembelianController;
+use App\Http\Controllers\PesananController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -199,3 +205,21 @@ Route::get('/test-biodatas', function () {
     $query = App\Models\Biodatas::all();
     return view('test-biodatas', compact('query'));
 });
+
+
+Route::get('/postcontrol', [PostController::class, 'index']);
+
+
+Route::get('/barang', [BarangController::class, 'Barang']);
+
+
+Route::get('/pembeli', [PembeliController::class, 'Pembeli']);
+
+
+Route::get('/suplier', [SuplierController::class, 'Suplier']);
+
+
+Route::get('/pesanan', [PesananController::class, 'Pesanan']);
+
+
+Route::get('/pembelian', [PembelianController::class, 'Pembelian']);

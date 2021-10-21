@@ -5,9 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Pesanan extends Model
 {
     use HasFactory;
+    public $table = 'pesanan';
 
-    protected $fillabel = ['title', 'content'];
+    protected $fillabel = ['namaPelanggan', 'namaBarang', 'qty', 'tanggalPesan'];
 }
